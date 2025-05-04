@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body id="courses-page">
+    <!-- S T A R T                  N A V B A R                             S E C T I O N-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand m-0" href="../index.html"
+          ><img src="../assets/imgs/brand-cropped.png" alt="" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2"  href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2"  href="../index.html#news">News</a>
+              </li>
+              <li class="nav-item mx-lg-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Enroll in a course</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">Job application</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="../index.html#gallery">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--  E N D                     N A V B A R                             S E C T I O N-->
+
+    <!--  S T A R T                     C O U R S E S                         S E C T I O N-->
+    <section class="my-5">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="side-filters-container">
+              <div class="side-filter">
+                <div class="side-filter-title">
+                  <h6>Categories</h6>
+                  <hr>
+                </div>
+                <div class="filter-items">
+                  <div id="category-all" class="filter-item active">
+                    <p>all</p>
+                  </div>
+                  <div id="category-one" class="filter-item">
+                    <p>category one</p>
+                  </div>
+                  <div id="category-two" class="filter-item">
+                    <p>category two</p>
+                  </div>
+                  <div id="category-three" class="filter-item">
+                    <p>category three</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-9">
+            <div class="explore-section">
+              <div class="explore-header">
+                <h2>Courses</h2>
+              </div>
+              <div class="section-content d-flex flex-wrap justify-content-start">
+                <!-- <div class="course-content" id="0" data-category="category-one">
+                  <a href="">
+                    <div class="course-card">
+                      <img src="https://picsum.photos/id/123/260/115" alt="">
+                      <div class="course-info">
+                        <div class="course-title">
+                          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div> -->
+
+                <!-- <div class="course-content" id="1" data-category="category-one">
+                  <a href="">
+                    <div class="course-card">
+                      <img src="https://picsum.photos/id/123/260/115" alt="">
+                      <div class="course-info">
+                        <div class="course-title">
+                          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="course-content" id="2" data-category="category-one">
+                  <a href="">
+                    <div class="course-card">
+                      <img src="https://picsum.photos/id/123/260/115" alt="">
+                      <div class="course-info">
+                        <div class="course-title">
+                          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="course-content" id="3" data-category="category-two">
+                  <a href="">
+                    <div class="course-card">
+                      <img src="https://picsum.photos/id/123/260/115" alt="">
+                      <div class="course-info">
+                        <div class="course-title">
+                          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="course-content" id="4" data-category="category-two">
+                  <a href="">
+                    <div class="course-card">
+                      <img src="https://picsum.photos/id/123/260/115" alt="">
+                      <div class="course-info">
+                        <div class="course-title">
+                          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="course-content" id="5" data-category="category-three">
+                  <a href="">
+                    <div class="course-card">
+                      <img src="https://picsum.photos/id/123/260/115" alt="">
+                      <div class="course-info">
+                        <div class="course-title">
+                          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="course-content" id="6" data-category="category-three">
+                  <a href="">
+                    <div class="course-card">
+                      <img src="https://picsum.photos/id/123/260/115" alt="">
+                      <div class="course-info">
+                        <div class="course-title">
+                          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--  E N D                     C O U R S E S                         S E C T I O N-->
+    
+    <!--  S T A R T                     F O O T E R                         S E C T I O N-->
+    <footer id="footer" class="text-white">
+      <div class="container-fluid">
+        <div class="container mx-auto main-footer row pt-5">
+          <div class="col-lg-3 col-md-6 col-sm-12 about-us mb-sm-5">
+            <h3 class="h2 fw-semibold mb-3">About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ducimus voluptatibus soluta provident molestias est sunt perspiciatis tenetur maiores quis temporibus asperiores commodi, ad aut!</p>
+            <ul class="socials d-flex">
+              <li class="me-3"><a href="">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+              </a></li>
+              <li class="me-3"><a href="">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+              </a></li>
+              <li class="me-3"><a href="">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+              </a></li>
+              <li class="me-3"><a href="">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+              </a></li>
+            </ul>
+          </div> 
+          <div class="col-lg-3 col-md-6 col-sm-12 important-pages mb-sm-5">
+            <h3 class="h2 fw-semibold mb-3">Important Pages</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#news">Our Latest News</a></li>
+              <!-- <li><a href="../index.html#courses">Our Courses</a></li> -->
+              <li><a href="../index.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 support mb-sm-5">
+            <h3 class="h2 fw-semibold mb-3">Support</h3>
+            <ul>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#help">Help</a></li>
+              <li><a href="#job-application">Job Application</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 contact mb-sm-5">
+            <h3 class="h2 fw-semibold mb-3">Contact Us</h3>
+            <ul class="info">
+              <li>
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:035357999">+03 5357999 </a>
+              </li>
+              <li>
+                <span>
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:example@gmail.com" class="contact-email fs-6 fw-normal">example@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+        <hr>
+        <div class="copyright d-flex justify-content-center align-items-center">
+          <p class="copyright-content">All rights reserved | ECA ROBOTICS © 2025</p>
+        </div>
+      </div>
+    </footer>
+    <!--  E N D                     F O O T E R                         S E C T I O N-->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- script -->
+    <script src="../assets/js/courses.js"></script>
+  </body>
+</html>
